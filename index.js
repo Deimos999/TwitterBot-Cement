@@ -10,11 +10,4 @@ const tweet = async () => {
   }
 };
 
-function tick(){
-    var hours = new Date().getHours();
-    if (hours == "00" || hours == "12"){
-        tweet()
-    }
-}
-
-setInterval( tick, 3600000 );
+setInterval( tweet, 3600000 );
